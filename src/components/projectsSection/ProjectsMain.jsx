@@ -8,14 +8,14 @@ const projects = [
     name: "Project BIM & Power BI",
     year: "Leveraging Revit Data for Analytical Visualization",
     align: "right",
-    image: "/images/website-img-1.jpg",
+    image: "/portfolio/images/website-img-1.jpg",
     link: "https://docs.google.com/presentation/d/1FEeVY2b-t_ovS9bHj-3mc83DZfVBM2cn/edit?usp=drive_link&ouid=107527228456277639624&rtpof=true&sd=true",
   },
   {
     name: "The ISO 55000 standard",
     year: "Optimizing asset management with ISO 55000",
     align: "left",
-    image: "/images/website-img-2.jpeg",
+    image: "/portfolio/images/website-img-2.jpeg",
     link: "https://docs.google.com/presentation/d/1z_JzJeFLftgS7E2W7tL6VL8998uEa1cu/edit?usp=drive_link&ouid=107527228456277639624&rtpof=true&sd=true",
   },
   {
