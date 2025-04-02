@@ -50,7 +50,7 @@ const projects = [
     name: "Poka yoke",
     year: "Error-prevention design",
     align: "right",
-    image: "/images/Poka yoke.jpg",
+    image: "/portfolio/images/Poka yoke.jpg",
     link: "https://docs.google.com/presentation/d/1JrXTx9iwjhvhfgCkhk3c2Z9nYyntNkyO/edit?usp=drive_link&ouid=107527228456277639624&rtpof=true&sd=true",
   },
 ];
