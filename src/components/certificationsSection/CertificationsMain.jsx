@@ -17,7 +17,7 @@ const certifications = [
     year: "Encourage creativity and invention",
     align: "left",
     image: "/portfolio/images/certifications/design-thinking.png",
-    link: "https://openclassrooms.com/fr/course-certificates/2144789035",
+    link: "https://drive.google.com/file/d/1wyheSpTkIOcm_6RZS7Zj2du5HP0pYUZA/view?usp=drive_link",
   },
   {
     name: "Scrum Master",
@@ -45,14 +45,14 @@ const certifications = [
     year: "Software development with Java",
     align: "left",
     image: "/portfolio/images/certifications/java-programmer.png",
-    link: "https://openclassrooms.com/fr/course-certificates/7936923397",
+    link: "https://drive.google.com/file/d/1mNuwuZxmIlwZiTt9UE6tOMvQvXoXi2HA/view?usp=drive_link",
   },
   {
     name: "Master the fundamentals of Excel",
     year: "Improve Productivity with Excel",
     align: "right",
     image: "/portfolio/images/certifications/excel-fundamentals.png",
-    link: "https://openclassrooms.com/fr/course-certificates/2713863226",
+    link: "https://drive.google.com/file/d/1ILtXsF0fD51ySgT-aVOUztjzgqqAvwap/view?usp=drive_link",
   },
 ];
 
