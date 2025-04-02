@@ -1,5 +1,5 @@
 import SingleSkill from "./SingleSkill";
-import { FaTools } from "react-icons/fa";
+import {FaTools} from "react-icons/fa";
 import { FaClock } from "react-icons/fa";
 import { FaProjectDiagram } from "react-icons/fa";
 import { FaIndustry } from "react-icons/fa";
@@ -12,11 +12,27 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const skills = [
   {
-    skill: "Lean Manufacturing",
+    skill: "TPM",
+    icon: FaTools,
+  },
+  {
+    skill: "MTS",
+    icon: FaClock,
+  },
+  {
+    skill: "VSM",
+    icon: FaProjectDiagram,
+  },
+  {
+    skill: "FM",
     icon: FaIndustry,
   },
   {
-    skill: "Kaizen",
+    skill: "SMED",
+    icon: FaCertificate,
+  },
+  {
+    skill: "KAIZEN",
     icon: FaChartLine,
   },
   {
@@ -24,42 +40,32 @@ const skills = [
     icon: FaTasks,
   },
   {
-    skill: "SMED",
-    icon: FaClock,
-  },
-  {
-    skill: "TPM",
-    icon: FaTools,
-  },
-  {
     skill: "FMEA",
     icon: FaSearchPlus,
-  },
-  {
-    skill: "6 Sigma",
-    icon: FaCertificate,
-  },
-  {
-    skill: "Supply Chain",
-    icon: FaProjectDiagram,
   },
 ];
 
 const AllSkills = () => {
   return (
     <div>
-      <div className="flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto flex-wrap">
-        {skills.map((item, index) => (
-          <motion.div
-            variants={fadeIn("up", `0.${index}`)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0 }}
-            key={index}
-          >
-            <SingleSkill text={item.skill} imgSvg={<item.icon />} />
-          </motion.div>
-        ))}
+      <div className="flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto">
+        {skills.map((item, index) => {
+          return (
+            <motion.div
+              variants={fadeIn("up", `0.${index}`)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0 }}
+              key={index}
+            >
+              <SingleSkill
+                key={index}
+                text={item.skill}
+                imgSvg={<item.icon />}
+              />
+            </motion.div>
+          );
+        })}
       </div>
     </div>
   );
