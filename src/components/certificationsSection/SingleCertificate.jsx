@@ -4,9 +4,11 @@ import { motion } from "framer-motion";
 const SingleCertificate = ({ name, year, image, link, align }) => {
   return (
     <motion.div
-      className={`flex items-center ${
-        align === "right" ? "flex-row-reverse" : "flex-row"
-      } gap-6`}
+      className={`
+        flex items-center gap-6
+        sm:flex-col
+        md:${align === "right" ? "flex-row-reverse" : "flex-row"}
+      `}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.5 }}
@@ -23,8 +25,8 @@ const SingleCertificate = ({ name, year, image, link, align }) => {
       />
 
       {/* Texte et lien */}
-      <div className="text-left">
-        <h3 className="md:text-3xl sm:text-2xl text-orange ">{name}</h3>
+      <div className="text-left sm:text-center">
+        <h3 className="md:text-3xl sm:text-2xl text-orange">{name}</h3>
         <p className="text-gray-600">{year}</p>
         <a
           href={link}
